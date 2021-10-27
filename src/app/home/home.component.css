@@ -1,0 +1,18 @@
+.item .carousel-caption h3{
+    font-size: 38px;
+
+    font-family: 'Yellowtail - 400',Yellowtail, cursive;
+    padding: 150px;
+    
+
+}
+
+.item .carousel-caption .btn{
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    top:10px;
+}
+.clear{
+    clear: both;
+}

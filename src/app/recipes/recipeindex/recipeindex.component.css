@@ -1,0 +1,47 @@
+.title{
+    height: 200px;
+    background-color:#D73A24;
+}
+.title h3{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 70px;
+
+}
+
+/* ======= */
+/* .table{
+    margin: 17px 0px;
+    padding: 10px;
+}
+thead{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+ }
+
+th{
+    padding: 8px 16px;
+     background-color: black;
+     color: white;
+     text-align: center;
+     width: 100%;
+     border-bottom: 1px solid #fff;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 14px;
+
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+ }
+ td{
+     padding: 8px 0px;
+     background-color: #f4f4f4;
+     border-bottom: 1px solid #fff;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 14px;
+ 
+ } */

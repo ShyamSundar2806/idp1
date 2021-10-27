@@ -1,0 +1,58 @@
+.title{
+    height: 200px;
+    background-color:#D73A24;
+}
+.title h3{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 70px;
+
+}
+/* === */
+.recipes{
+    margin: 10px;
+}
+.col-sm-3{
+   
+    height: 350px;
+    width: 250px;
+    margin: 25px;
+}
+.col-sm-3 img{
+    position: relative;
+}
+.col-sm-3 .bookmark{
+    position: absolute;
+    background-color: tomato;
+    border-radius: 50%;
+    left: 200px;
+    top: 10px;
+    padding: 6px;
+    width: 28px;
+    height: 28px;
+
+
+}
+.col-sm-3 .content{
+    padding: 1px;
+    background-color: black;
+    color: white;
+}
+.content h3{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content h6{
+    font-size: 18px;
+
+}
+.content hr{
+    border: 1px solid white;
+}
+/* =========== */
+.page{
+    width: 30%;
+    margin: 0 auto;
+}
+

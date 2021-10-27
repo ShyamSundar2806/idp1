@@ -1,0 +1,24 @@
+/* p{
+    font-size: 30px;
+    text-align: center;
+    color:salmon;
+}
+img{
+    width: 500px;
+    height: 500px;
+    margin: 20px 0px 0px 400px;
+} */
+
+.col-sm-12{
+    border: 1px solid black;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    
+}
+.loan{
+    margin: 20px;
+}
+.loan input{
+    margin: 10px;
+}
