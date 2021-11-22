@@ -1,0 +1,48 @@
+<div class="menu">
+
+<form>
+   <label>Principle :</label><input id="principle" type="number" #p><br>
+
+   <label>Month's :</label><input type="number" id="months" #m><br>
+
+    <label>Rate of Intrest :</label><input type="number" id="rate" value="{{rateOfIntrest}}" #r><br>
+
+    <label>Loan Type</label><br>
+
+    <input type="radio" id="html" name="fav_language"  value="4" #myval (click)=abc($event)>
+
+      <label for="html">Home</label>
+
+
+
+    <input type="radio" id="html" name="fav_language" value=10   #myval (click)=abc($event)>
+
+      <label for="html">Vehicle</label><br>
+
+
+
+    <input type="radio" id="html" name="fav_language" value=12 #myval (click)=abc($event)>
+
+      <label for="html">Education</label>
+
+
+
+    <input type="radio" id="html" name="fav_language"  value=6 #myval (click)=abc($event) >
+
+      <label for="html">Persional</label>
+<br>
+
+    <input type="button" value="Calculate" (click)="cal(p.value,m.value,r.value)">
+
+    <input type="Reset" value="Reset">
+
+    <br>
+    <h5>Value:{{this.c}}</h5>
+
+    <label>EMI</label><input type="text" value="{{emi}}">
+
+  </form>
+
+ 
+
+</div>

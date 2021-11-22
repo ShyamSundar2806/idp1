@@ -1,0 +1,78 @@
+<h1>Welcome to DrectiveDemo</h1>
+<div *ngIf="display">
+
+    <h1>Hi Shyam</h1>
+</div>
+
+
+<!-- <div>
+    Name:<input type="text" #name placeholder="Enter the name">
+    <span *ngIf="error1" [style.color]="color" >Name Must be more then 2 Ch</span>
+    <span *ngIf="error2"  [style.color]="color">Name Must be enter</span>
+    <span *ngIf="valid"  [style.color]="color1">Name is valid</span>
+    
+    <input type="button" value="click " (click)=validate(name.value)>
+</div> -->
+
+<div *ngIf="display1 ;else abc">
+
+    <h1>Hi Shyam11</h1>
+</div>
+
+<ng-template #abc>
+    <h2>Else Sundar</h2>
+</ng-template>
+
+<!-- ========*ngFor============ -->
+<div>
+    <h2>ngFor</h2>
+    <ol>
+        <li *ngFor="let myfruits of fruits;index as i">{{myfruits}}={{i}}</li>
+    </ol>
+    <ul>
+        <li *ngFor="let myfruits of fruits">{{myfruits}}</li>
+    </ul>
+</div>
+
+<!-- ==========switch========== -->
+
+<input type="text" placeholder="enter the number" #val>
+<input type="button" value="click" (click)=xyz(val.value)>
+<div [ngSwitch]="switch1">
+
+    <h4 *ngSwitchCase="1">tamil</h4>
+    <h4 *ngSwitchCase="2">english</h4>
+    <h4 *ngSwitchCase="3">tenglu</h4>
+    <h4 *ngSwitchCase="4">kanda</h4>
+    <h4 *ngSwitchDefault>hindi</h4>
+
+</div>
+
+
+
+
+
+
+
+<!-- =====================ngClass============= -->
+
+<div>    HI This is just for Demo   
+      HI This is just for Demo    
+     HI This is just for Demo   
+      HI This is just for Demo 
+</div>
+<div [ngClass]="{bg:true, bdr:true}"> 
+       HI This is just for Demo 
+        HI This is just for Demo 
+        HI This is just for Demo   
+      HI This is just for Demo
+ </div>
+<div class="bg">   
+     HI This is just for Demo 
+        HI This is just for Demo    
+     HI This is just for Demo  
+       HI This is just for Demo 
+</div>
+
+
+

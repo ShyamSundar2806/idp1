@@ -12,4 +12,6 @@ export class BlogsingleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
 }

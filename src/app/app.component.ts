@@ -14,7 +14,9 @@ export class AppComponent {
    
    
  }
-  
+  rective(){
+    this.router.navigateByUrl('blog/rective')
+  }
  recipesingle(){
   this.router.navigateByUrl('recipes/recipesingle');
  }
@@ -24,6 +26,9 @@ export class AppComponent {
  bloglist(){
   this.router.navigateByUrl('blog/bloglist');
 
+ }
+ directive(){
+  this.router.navigateByUrl('blog/directive');
  }
  blogsingle(){
    this.router.navigateByUrl('blog/blogsingle');

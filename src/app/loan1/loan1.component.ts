@@ -11,7 +11,7 @@ export class Loan1Component implements OnInit {
   month:any;
   rate:any;
   rateOfIntrest=5;
-
+b:any;
   constructor() { }
 
   
@@ -26,8 +26,8 @@ export class Loan1Component implements OnInit {
       this.month=month;  
       this.rate=rate; 
        var a=this.principle*this.month*this.rate;  
-       var b=a/100;   
-      console.log(b) 
+       this.b=a/100;   
+       
      }
 
 

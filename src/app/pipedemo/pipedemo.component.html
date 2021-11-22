@@ -1,0 +1,73 @@
+
+<div>
+
+    <h1> Hi PIPE Demo </h1>
+
+    <h4>
+
+        {{srt}}<br>
+
+        {{srt | uppercase}}<br>
+
+        {{srt | lowercase}}<br>
+
+       Name :  <input type="text" value="{{srt | lowercase }}"><br>
+
+        <hr>
+
+        Amount : {{amount}}<br>
+
+        
+
+        Amount : {{amount | currency}}<br>
+
+        Amount : {{amount | currency: 'INR'}}<br>
+
+        Amount : {{amount | currency: 'JPY'}}<br>
+
+        Amount : {{amount | currency: 'EUR'}}<br>
+
+
+
+        payment :<input type="text" value="{{amount1 | currency: 'INR'}}" readonly>
+
+        <hr>
+
+        Date:{{date}}<br>
+
+        Date:{{date | date}} <br>
+
+        Date:{{date | date :'fullDate'}} <br>
+
+        
+
+        Date:{{date | date :'dd/MM/yyyy'}} <br>
+
+        Date:{{date | date :'MM/dd/yyyy'}} <br>
+
+        Date:{{date | date :'MM/dd/yy'}} <br>
+
+        <hr>
+
+        {{person }}<br>
+
+        {{person | json }}<br> 
+
+       PIPE Chaining :  HI : {{name| uppercase }} your date of Birth is  : {{date |date:"fullDate" |slice:9:25 | uppercase }}
+
+    </h4>
+
+    <hr>
+    <h1>Costm PIPE</h1>
+
+    <!-- {{2 | power}} -->
+
+    {{2 |power:'4'}}
+
+    <hr>
+
+    <h1>Sqr</h1>
+
+    sqr:{{2|square:'20'}}
+
+</div>

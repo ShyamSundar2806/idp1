@@ -1,5 +1,56 @@
 
-<div class="menu">  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="register">
+
+  <div class="container">
+  <h3>Login Here</h3>
+  <p>Welcome back. Log in using your e-mail and password.</p>
+
+  <form>
+
+    <input type="text" #myname  placeholder="Enter your name" autocomplete="off"><br>  
+    <span [style.color]="color">{{msg1}}</span>
+
+    <br>
+
+  
+
+    <input type="text" #mypass  placeholder="Enter your password" autocomplete="off"><br>
+    <span [style.color]="color">{{msg2}}</span>
+
+    <br>
+
+    <input type="button" id="btn"  value="login" (click)="register(myname.value,mypass.value)">
+
+    <br>
+
+
+  </form>
+
+
+</div>
+  
+
+</div><br>
+
+
+
+
+
+
+
+<!-- <div class="menu">  
     <h1>Login Here</h1>   
      <form>     
           <label>Name:</label><input type="text" #myname autocomplete="off">  
@@ -8,7 +59,7 @@
             <br>         
             <input type="button" value="reg" (click)="register(myname.value,mypass.value)">   
         </form>     
-          </div>
+          </div> --> 
 
-        <input type="text" value="{{servname}}">
+      <input type="text" value="{{servname}}">
         <input type="submit" (click)="abc()">

@@ -9,33 +9,38 @@ import { ServicedemoService } from '../servicedemo.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
-  myname:any;
-
-  mypass:any;
+  msg1:any;
+  msg2:any;
+  color="red";
   constructor(private router:Router,private a:ServicedemoService) { }
   
-  register(Username:any,Password:any){
+  register(name:string,Password:any){
 
- 
+    let variable:string | null=localStorage.getItem(name);
+     if(variable==null){
+       
+      this.msg1="Please Correct Name";
+      this.msg2="Please Correct Password";
+          return
+  }
 
-    this.myname=  localStorage.getItem("Username");
+    let ob:any=JSON.parse(variable);
+
+
+    // this.myname=  localStorage.getItem("Username");
   
-    this.mypass=  localStorage.getItem("Password");
+    // this.mypass=  localStorage.getItem("Password");
   
   
   
-      if((this.myname==Username)&&(this.mypass==Password) ){
+      if((ob.name==name)&&(ob.pass==Password) )
+      {
   
   
   
         this.router.navigateByUrl('loan1');
   
   
-  
-      }else{
-  
-        alert("sry")
   
       }
   

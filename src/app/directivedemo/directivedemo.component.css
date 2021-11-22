@@ -1,0 +1,19 @@
+div{
+
+    width: 200px;
+
+    height: 100px;
+
+}
+
+.bg{
+
+    background-color: yellow;
+
+}
+
+.bdr{
+
+    border: 5px solid red ;
+
+}

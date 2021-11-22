@@ -1,33 +1,33 @@
-<div class="menu">
+<div class="register">
 
-  <h1>Registration Here</h1>
+  <div class="container">
+  <h3>Registration Here</h3>
+  <p>If you don't have account yet.</p>
 
   <form>
 
-    <label>Name:</label><input type="text" #myname >
+<label id="n"></label><input type="text" #myname placeholder="Enter your name" ><br>
+<p [style.color]="color">{{msg1}}</p>
 
     <br>
 
-    <label>Password:</label><input type="text" #mypass  >
+    <label id="p"></label><input type="text" #mypass  placeholder="Enter your password">
+    <p [style.color]="color">{{msg2}}</p>
+    <br>
+
+    <input type="button" id="btn" value="register" (click)="login(myname.value,mypass.value)">
 
     <br>
 
-    <label>Mobile</label><input type="text" #myphone >
-    <br>
-
-    <input type="button" value="log" (click)="login(myname.value,mypass.value,myphone.value)">
-
-    <br>
-
-   
+    <a routerLink="register" (click)="reg()" >Already have Account?Login Here!</a>
   </form>
 
 
-
-   <a routerLink="register" (click)="reg()" >Already have Account?Login Here!</a>
+</div>
+  
 
 </div><br>
-
+ 
 <input type="text" [(ngModel)]="mydata" style="width: 300px;height: 40px;border-radius: 20px;">  
 
 
@@ -36,7 +36,7 @@
 
 {{mydata}}
 <br>
-
+ 
 <input type="text" #myname1>
 <input type="submit" (click)="abc(myname1.value)">
 

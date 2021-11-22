@@ -23,6 +23,14 @@ import { EventsingleComponent } from './events/eventsingle/eventsingle.component
 import { ArchiveComponent } from './blog/archive/archive.component';
 import { RegisterComponent } from './register/register.component';
 import { Loan1Component } from './loan1/loan1.component';
+import { Loan2Component } from './loan2/loan2.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { PowerPipe } from './power.pipe';
+import { SquarePipe } from './square.pipe';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
+import { RectivedemoComponent } from './rectivedemo/rectivedemo.component';
+
+
 
 @NgModule({
   declarations: [
@@ -43,7 +51,13 @@ import { Loan1Component } from './loan1/loan1.component';
     EventsingleComponent,
     ArchiveComponent,
     RegisterComponent,
-    Loan1Component
+    Loan1Component,
+    Loan2Component,
+    PipedemoComponent,
+    PowerPipe,
+    SquarePipe,
+    DirectivedemoComponent,
+    RectivedemoComponent
   ],
   imports: [
     BrowserModule,
